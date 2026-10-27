@@ -1,0 +1,4 @@
+chr.outcome,pos.outcome,other_allele.outcome,effect_allele.outcome,SNP,pval.outcome,beta.outcome,se.outcome,ncase.outcome,ncontrol.outcome,outcome,mr_keep.outcome,pval_origin.outcome,samplesize.outcome,id.outcome,eaf.outcome
+7,128414046,A,G,rs4731451,0.969012992280285,-0.0696833,0.0282598,98,174006,SKCM || finngen_R9_C3_MELANOMA_SKIN_EXALLC,TRUE,reported,174104,SKCM,NA
+7,128602322,G,A,rs61594321,0.527600258914485,-0.0286944,0.026434,98,174006,SKCM || finngen_R9_C3_MELANOMA_SKIN_EXALLC,TRUE,reported,174104,SKCM,NA
+7,128718837,C,A,rs745229,0.118933171489924,0.00291186,0.0308072,98,174006,SKCM || finngen_R9_C3_MELANOMA_SKIN_EXALLC,TRUE,reported,174104,SKCM,NA

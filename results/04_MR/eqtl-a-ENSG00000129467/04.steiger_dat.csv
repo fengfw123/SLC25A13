@@ -1,0 +1,2 @@
+"id.exposure","id.outcome","exposure","outcome","snp_r2.exposure","snp_r2.outcome","correct_causal_direction","steiger_pval"
+"jhqZO4","SKCM","eqtl-a-ENSG00000129467 || id:finngen_R9_C3_MELANOMA_SKIN_EXALLC","SKCM || finngen_R9_C3_MELANOMA_SKIN_EXALLC",0.00411240166682293,5.75416745440343e-06,TRUE,1.65212476752533e-23

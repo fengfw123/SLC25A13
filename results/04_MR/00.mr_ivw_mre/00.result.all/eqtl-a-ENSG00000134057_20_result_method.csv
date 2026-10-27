@@ -1,0 +1,2 @@
+"id.exposure","id.outcome","outcome","exposure","method","nsnp","b","se","pval","lo_ci","up_ci","or","or_lci95","or_uci95"
+"lgWM7Y","SKCM","SKCM || finngen_R9_C3_MELANOMA_SKIN_EXALLC","eqtl-a-ENSG00000134057 || id:finngen_R9_C3_MELANOMA_SKIN_EXALLC","Inverse variance weighted (multiplicative random effects)",3,-0.0167702104921496,0.0123044177103806,0.172900718638363,-0.0408868692044956,0.00734644822019628,0.983369626696912,0.959937722323273,1.00737349957414

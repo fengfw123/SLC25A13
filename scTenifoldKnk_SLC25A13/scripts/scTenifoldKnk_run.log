@@ -1,0 +1,114 @@
+=== scTenifoldKnk: SLC25A13 Knockout in Melanoma ===
+Start time: 2026-06-21 11:36:08 
+
+[1/7] Loading libraries...
+  scTenifoldKnk version: 1.0.3 
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: 'SeuratObject'
+
+The following objects are masked from 'package:base':
+
+    intersect, t
+
+
+Attaching package: 'data.table'
+
+The following object is masked from 'package:base':
+
+    %notin%
+
+[2/7] Loading Seurat data...
+            used   (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells   3539594  189.1    5727701  305.9   5727701  305.9
+Vcells 203401819 1551.9  284139323 2167.9 203403030 1551.9
+  Total cells: 33845
+  Total genes: 26901
+  Melanoma cells: 14983
+           used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells  3546694 189.5    5727701  305.9   5727701  305.9
+Vcells 98138451 748.8  340665048 2599.1 354763524 2706.7
+[3/7] Extracting count matrix...
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 3.0 GiB
+  Raw matrix: 26901 genes x 14983 cells
+  'SLC25A13' rank by expression: 4790 / 26901
+  Filtered matrix: 5000 genes x 14983 cells
+  Sparsity: 79.1% zeros
+            used   (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells   3546120  189.4    5727701  305.9   5727701  305.9
+Vcells 484262634 3694.7  766566856 5848.5 613676314 4682.0
+[4/7] Running scTenifoldKnk...
+  Target gene: SLC25A13
+  Parameters: nc_nNet=10, nc_nCells=500, nCores=16
+  Running... (this may take 2-4 hours)
+
+
+── scTenifoldKnk ───────────────────────────────────────────────────────────────
+ℹ Simulating SLC25A13 gene knockout
+✔ Network construction complete (nNet = 10, nCells per net = 500)
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+✔ Tensor decomposition completed (K = 3)
+✔ Prepared WT adjacency matrix for KO simulation
+✔ Simulated knockout for SLC25A13
+✔ Manifold alignment completed (d = 2)
+✔ Differential regulation computed for SLC25A13
+✔ Finished scTenifoldKnk for SLC25A13
+
+  Elapsed time: 1.08 hours (64.9 minutes)
+[5/7] Saving results...
+  Total genes evaluated: 5000
+  Significant (p.adj<0.05): 107
+  Up-regulated (FC>1): 107
+  Down-regulated (FC<1): 0
+
+Top 20 up-regulated genes (by FC):
+        gene       FC        Z      p.value        p.adj
+651  LRRC75A 78.21275 2.574634 9.251957e-19 2.312989e-15
+360   LGALS3 70.94812 2.533685 3.667430e-17 6.112383e-14
+386   SQSTM1 64.93348 2.496747 7.746974e-16 9.683718e-13
+939    CAPN3 62.58705 2.481476 2.549247e-15 2.549247e-12
+642    GDF15 60.97806 2.470697 5.771446e-15 4.809538e-12
+2321    QPCT 57.34963 2.445393 3.648324e-14 2.605946e-11
+257     TBCA 55.86786 2.434634 7.750937e-14 4.844336e-11
+1273  RPS4Y1 48.50674 2.376943 3.291555e-12 1.828642e-09
+4153    CDH1 47.10293 2.365032 6.735489e-12 3.367745e-09
+3135 BHLHE41 46.56741 2.360402 8.852024e-12 4.023647e-09
+407     NSA2 45.71951 2.352970 1.364570e-11 5.685710e-09
+2048    NBL1 43.52991 2.333174 4.175296e-11 1.605883e-08
+276     CD74 39.61898 2.295415 3.086686e-10 1.102388e-07
+139     APOD 38.94876 2.288602 4.350763e-10 1.450254e-07
+1509 RPL22L1 37.20930 2.270403 1.061065e-09 3.315828e-07
+135   CDKN2A 36.27309 2.260281 1.715162e-09 5.044596e-07
+548    TIMP2 34.95986 2.245669 3.365721e-09 9.349224e-07
+2257    TPP1 33.48895 2.228690 7.167000e-09 1.886053e-06
+3601    NQO1 31.92260 2.209837 1.604396e-08 4.010989e-06
+1128    VAT1 30.80247 2.195825 2.856746e-08 6.801777e-06
+
+Top 20 down-regulated genes (by FC):
+[6/7] Generating plots...
+[7/7] Summary report
+
+========================================
+  scTenifoldKnk — SLC25A13 KO in Melanoma
+========================================
+  Input cells: 14983
+  Input genes: 5000
+  Execution time: 1.08 hours
+  Significant genes (p.adj<0.05): 106
+  Up-regulated: 106
+  Down-regulated: 0
+========================================
+Output files:
+  scTenifoldKnk_SLC25A13_result.rds  — full R object
+  SLC25A13_KO_all_genes.txt           — all genes with stats
+  SLC25A13_KO_sig_genes.txt           — significant genes only
+  SLC25A13_KO_volcano.pdf/png         — volcano plot
+  SLC25A13_KO_top30_FC.pdf/png        — FC barplot
+  SLC25A13_KO_proportion.pdf/png      — proportion pie
+========================================
+
+End time: 2026-06-21 12:41:35 
+=== Analysis Complete ===

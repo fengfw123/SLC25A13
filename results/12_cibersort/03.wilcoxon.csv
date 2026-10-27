@@ -1,0 +1,23 @@
+Cell,.y.,group1,group2,n1,n2,statistic,p,p.adj,p.signif
+B cells memory,Cell composition,High,Low,224,225,24643.5,0.593,0.722526315789474,ns
+B cells naive,Cell composition,High,Low,224,225,26088.5,0.515,0.666470588235294,ns
+Dendritic cells activated,Cell composition,High,Low,224,225,24632.5,0.348,0.546857142857143,ns
+Dendritic cells resting,Cell composition,High,Low,224,225,25175.5,0.986,0.986,ns
+Eosinophils,Cell composition,High,Low,224,225,25648,0.495,0.666470588235294,ns
+Macrophages M0,Cell composition,High,Low,224,225,28004,0.0414,0.1199,*
+Macrophages M1,Cell composition,High,Low,224,225,20954,0.00201,0.02211,**
+Macrophages M2,Cell composition,High,Low,224,225,28672,0.0116,0.05104,*
+Mast cells activated,Cell composition,High,Low,224,225,24983,0.738,0.8118,ns
+Mast cells resting,Cell composition,High,Low,224,225,27970,0.0436,0.1199,*
+Monocytes,Cell composition,High,Low,224,225,27125,0.135,0.267666666666667,ns
+NK cells activated,Cell composition,High,Low,224,225,23470,0.205,0.346923076923077,ns
+NK cells resting,Cell composition,High,Low,224,225,28806,0.00186,0.02211,**
+Neutrophils,Cell composition,High,Low,224,225,24766,0.624,0.722526315789474,ns
+Plasma cells,Cell composition,High,Low,224,225,22383,0.0381,0.1199,*
+T cells CD4 memory activated,Cell composition,High,Low,224,225,21581,0.00776,0.04268,**
+T cells CD4 memory resting,Cell composition,High,Low,224,225,25460,0.841,0.881047619047619,ns
+T cells CD4 naive,Cell composition,High,Low,224,225,26092,0.146,0.267666666666667,ns
+T cells CD8,Cell composition,High,Low,224,225,21350,0.00508,0.0372533333333333,**
+T cells follicular helper,Cell composition,High,Low,224,225,22862,0.089,0.217555555555556,ns
+T cells gamma delta,Cell composition,High,Low,224,225,23271,0.109,0.2398,ns
+T cells regulatory (Tregs),Cell composition,High,Low,224,225,26155,0.487,0.666470588235294,ns

@@ -1,0 +1,10 @@
+*.Rdata
+*.RData
+*.rds
+*.rda
+*.tar
+*.tar.gz
+.Rhistory
+.Rproj.user/
+Thumbs.db
+.DS_Store

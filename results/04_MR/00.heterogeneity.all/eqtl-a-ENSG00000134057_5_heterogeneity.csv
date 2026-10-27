@@ -1,0 +1,3 @@
+"id.exposure","id.outcome","outcome","exposure","method","Q","Q_df","Q_pval"
+"9XtJvA","SKCM","SKCM || finngen_R9_C3_MELANOMA_SKIN_EXALLC","eqtl-a-ENSG00000134057 || id:finngen_R9_C3_MELANOMA_SKIN_EXALLC","MR Egger",0.00201191889514459,1,0.964223348695531
+"9XtJvA","SKCM","SKCM || finngen_R9_C3_MELANOMA_SKIN_EXALLC","eqtl-a-ENSG00000134057 || id:finngen_R9_C3_MELANOMA_SKIN_EXALLC","Inverse variance weighted",0.0366224023709595,2,0.981855430235037

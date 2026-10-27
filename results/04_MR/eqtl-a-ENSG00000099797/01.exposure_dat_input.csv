@@ -1,0 +1,2 @@
+chr.exposure,pos.exposure,other_allele.exposure,effect_allele.exposure,beta.exposure,se.exposure,pval.exposure,eaf.exposure,samplesize.exposure,ncase.exposure,SNP,ncontrol.exposure,exposure,mr_keep.exposure,pval_origin.exposure,id.exposure,id,rsid,pval
+19,14669419,T,C,-0.133368,0.0118648,2.57039578276886e-29,0.475518,16250,NA,rs10412426,NA,eqtl-a-ENSG00000099797 || id:finngen_R9_C3_MELANOMA_SKIN_EXALLC,TRUE,reported,PjSqOE,eqtl-a-ENSG00000099797,rs10412426,2.57039578276886e-29

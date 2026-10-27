@@ -1,0 +1,166 @@
+=== Post-KO Deep Analysis ===
+Start time: 2026-06-22 09:23:53 
+
+[1/7] Loading libraries...
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: 'SeuratObject'
+
+The following objects are masked from 'package:base':
+
+    intersect, t
+
+
+Attaching package: 'data.table'
+
+The following object is masked from 'package:base':
+
+    %notin%
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: generics
+
+Attaching package: 'generics'
+
+The following objects are masked from 'package:base':
+
+    as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+    setequal, union
+
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, saveRDS, table, tapply, unique,
+    unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following objects are masked from 'package:data.table':
+
+    first, second
+
+The following object is masked from 'package:utils':
+
+    findMatches
+
+The following objects are masked from 'package:base':
+
+    expand.grid, I, unname
+
+
+Attaching package: 'IRanges'
+
+The following object is masked from 'package:data.table':
+
+    shift
+
+The following object is masked from 'package:sp':
+
+    %over%
+
+The following object is masked from 'package:grDevices':
+
+    windows
+
+
+Loading required package: clusterProfiler
+
+clusterProfiler v4.20.0 Learn more at https://yulab-smu.top/contribution-knowledge-mining/
+
+Please cite:
+
+T Wu, E Hu, S Xu, M Chen, P Guo, Z Dai, T Feng, L Zhou, W Tang, L Zhan,
+X Fu, S Liu, X Bo, and G Yu. clusterProfiler 4.0: A universal
+enrichment tool for interpreting omics data. The Innovation. 2021,
+2(3):100141
+
+Attaching package: 'clusterProfiler'
+
+The following object is masked from 'package:AnnotationDbi':
+
+    select
+
+The following object is masked from 'package:IRanges':
+
+    slice
+
+The following object is masked from 'package:S4Vectors':
+
+    rename
+
+The following object is masked from 'package:stats':
+
+    filter
+
+Loading required package: enrichplot
+enrichplot v1.32.0 Learn more at https://yulab-smu.top/contribution-knowledge-mining/
+
+Please cite:
+
+Guangchuang Yu. Gene Ontology Semantic Similarity Analysis Using
+GOSemSim. In: Kidder B. (eds) Stem Cell Transcriptional Networks.
+Methods in Molecular Biology. 2020, 2117:207-215. Humana, New York, NY.
+[2/7] Loading KO results...
+  Significant genes: 106
+  Up-regulated: 106
+  Down-regulated: 0
+[3/7] Running GO enrichment...
+'select()' returned 1:1 mapping between keys and columns
+Warning message:
+In bitr(gene_list, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.Hs.eg.db) :
+  1.89% of input gene IDs are fail to map...
+  Mapped 104/106 genes to ENTREZ IDs
+Reading KEGG annotation online: "https://rest.kegg.jp/link/hsa/pathway"...
+Reading KEGG annotation online: "https://rest.kegg.jp/list/pathway/hsa"...
+Warning messages:
+1: In file(file, "rt") :
+  URL 'https://yulab-smu.top/clusterProfiler/md5.txt': status was 'SSL connect error'
+2: In file(file, "rt") :
+  URL 'https://raw.githubusercontent.com/YuLab-SMU/clusterProfiler/gh-pages/md5.txt': status was 'Failure when receiving data from the peer'
+  GO BP: 7 significant terms
+  GO MF: 1 significant terms
+  GO CC: 28 significant terms
+  KEGG: 2 significant pathways
+[4/7] Running GSEA...
+Warning messages:
+1: In gsea(geneList = geneList, gene_sets = geneSets, minGSSize = minGSSize,  :
+  There were 112 pathways for which P-values were not calculated properly due to unbalanced gene-level statistic values. For such pathways pvalue, NES and log2err are set to NA. You can try to increase nPermSimple.
+2: In calculate_qvalue(gsea_res$pvalue) :
+  Invalid p-values detected (NA, non-finite, <0, or >1). qvalue will be computed on valid p-values only.
+3: In enrichit::gsea_gson(geneList = geneList, exponent = exponent,  :
+  NA values detected in gene set IDs. Replacing with string 'NA'.
+4: In enrichit::gsea_gson(geneList = geneList, exponent = exponent,  :
+  Duplicate gene set IDs detected: NA... (Total 1). Unique suffixes added.
+  GSEA: NA significant gene sets
+[5/7] Generating KO subnetwork plot...
+  plotKO not available (may need different scTenifoldKnk version)
+[6/7] Generating enrichment plots...
+  cnetplot skipped
+Warning message:
+showCategory (10) is larger than available items (7). Using 7 
+Error in if (exists("gsea_all") && !is.null(gsea_all) && sum(gsea_all@result$p.adjust <  : 
+  missing value where TRUE/FALSE needed
+Execution halted
